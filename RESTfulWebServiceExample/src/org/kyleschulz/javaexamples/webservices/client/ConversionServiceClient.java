@@ -26,15 +26,13 @@ public class ConversionServiceClient {
 		System.out.println("INCH_TO_FEET Response: " + getResponse(addService));
 		System.out.println("INCH_TO_FEET Output as XML: "
 				+ getOutputAsXML(addService));
-		System.out
-				.println("---------------------------------------------------");
+		System.out.println("---------------------");
 
 		WebResource subService = service.path("rest").path(FEET_TO_INCH + feet);
 		System.out.println("FEET_TO_INCH Response: " + getResponse(subService));
 		System.out.println("FEET_TO_INCH Output as XML: "
 				+ getOutputAsXML(subService));
-		System.out
-				.println("---------------------------------------------------");
+		System.out.println("---------------------");
 
 	}
 
